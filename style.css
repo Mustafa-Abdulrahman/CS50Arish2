@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 0.2s
+}
+
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto
+}
+
+img {
+    width: 100%
+}
+
+/* ---------------------------------------- */
+
+nav {
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem
+}
+
+nav .img {
+    width: 100px
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+nav ul li a {
+    padding: 1rem;
+    font-weight: 600
+        /* background-color: red */
+}
+
+nav ul li a:hover {
+    background-color: #282828;
+    color: white;
+}
+
+nav ul li a.sign {
+    background-color: #282828;
+    color: white;
+}
+
+.paddingTopAndBottom {
+    padding: 3rem 0;
+}
+
+/* ------------------------------------------ Landing */
+
+section.coverPage {
+    /* background-color: red; */
+    background-image: linear-gradient(rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url("./Images/Montage-Beverly-Hills.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section.coverPage div {
+    width: 70%;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 17px black;
+    padding: 2rem
+        /* margin: 0 auto */
+}
+
+section.coverPage div a {
+    color: white;
+    padding: 0.7rem 2.5rem;
+    border: 2px solid white;
+    margin: 0 auto
+}
+
+section.coverPage div h1 {
+    margin-bottom: 1rem
+}
+
+section.coverPage div p {
+    margin-bottom: 2rem;
+}
+
+/* ------------------------- Visit */
+section.visit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+section.visit .box {
+    width: calc(98% / 3);
+    margin-bottom: 1rem;
+    border: 2px solid rgb(29, 29, 29)
+}
+
+section.visit .box .content {
+    padding: 0.7rem;
+}
+
+section.visit .box .content h2,
+section.visit .box .content p {
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+section.visit .box .content div {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    padding-top: 1rem
+}
+
+/* ------------------ App */
+section.app {
+    background-color: #eee
+}
+
+section.app .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+section.app .container div {
+    width: calc(98% / 2)
+}
+
+section.app .container .content img {
+    width: 150px
+}
+
+/* ------------ Sale */
+/*  */
+
+section.sale {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./Images/banner.jpg");
+    padding: 6rem 0;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    color: white
+}
+
+section.sale a {
+    width: 200px;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white
+}
+
+section.sale p {
+    font-size: 2rem;
+    font-weight: bold
+}
+
+section.sale p span {
+    color: red
+}
+
+section.sale a:hover {
+    background-color: black;
+    color: white;
+}
+
+section.images {}
+
+section.images .child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+section.images .child .box {
+    height: 30vh;
+    padding: 2rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Images/a1.webp);
+    background-size: cover;
+    background-position: center center;
+    displaY: flex;
+    align-items: center;
+    color: white
+}
+
+section.images .child:first-child .box {
+    width: calc(99% / 2);
+    margin-bottom: 1rem;
+}
+
+section.images .child:last-child .box {
+    width: calc(98% / 3)
+}
+
+section.images .child .box div {}
+
+section.images .child .box div span {}
+
+section.images .child .box div h3 {
+    font-size: 1.5rem
+}
+
+section.images .child .box div p {}
+
+section.images .child .box div button {
+    margin-top: 1rem;
+    padding: 0.7rem 2rem;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white
+}
+
+/* ---------- Footer */
+footer {
+    background-color: rgb(37, 37, 37);
+    color: white
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+footer .container ul,
+footer .container .follow {
+    width: calc(95% / 4)
+}
+
+footer .container ul li:first-child,
+footer .container .follow h2 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 0.7rem;
+    position: relative;
+    margin-bottom: 0.7rem
+}
+
+footer .container ul li:first-child::after,
+footer .container .follow h2::after {
+    content: '';
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+footer .container .follow a {
+    display: inline;
+}
+
+footer .container .follow a img {
+    width: 30px
+}
+
+.secoundFooter {
+    text-align: center;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    padding: 1rem
+}
+
+@media (max-width:1200px) {
+    section.visit {
+        width: 90%;
+    }
+
+    section.visit .box {
+        width: calc(98% / 2)
+    }
+
+    .app .container,
+    section.images {
+        width: 90%;
+    }
+}
+
+@media (max-width:992px) {
+    section.visit {
+        width: 90%;
+    }
+
+    section.visit .box {
+        width: calc(98% / 2)
+    }
+
+    .app .container {
+        flex-direction: column;
+        text-align: center
+    }
+
+    section.app .container div {
+        width: 80%
+    }
+
+    section.images .child {
+        flex-direction: column;
+    }
+
+    section.images .child .box {
+        width: 100% !important;
+        margin-bottom: 1rem;
+    }
+
+    footer .container {
+        flex-direction: column;
+        width: 80%
+    }
+
+    footer .container ul,
+    footer .container .follow {
+        width: 100%;
+
+
+    }
+}
+
+
+@media (max-width:768px) {
+
+    nav,
+    section.visit {
+        flex-direction: column
+    }
+
+    nav ul {
+        margin-bottom: 2rem
+    }
+
+    section.visit {
+        width: 90%;
+    }
+
+    section.visit .box {
+        width: 100%
+    }
+}
